@@ -6,7 +6,7 @@ int max(int a, int b)
 }
 int func(int arr[], int size)
 {
-    if (size == 1)
+    if (size == 0)
     {
         return arr[size];
     }
