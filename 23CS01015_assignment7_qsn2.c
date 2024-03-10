@@ -16,6 +16,7 @@ int main()
             var++;
         }
     }
+    printstr[var] = '\0';
     puts(printstr);
     return 0;
 } 
