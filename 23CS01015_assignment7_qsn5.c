@@ -1,29 +1,18 @@
 #include <stdio.h>
+#include <string.h>
 int main()
 {
     char str[1000];
     printf("Enter the string : ");
     scanf("%s", &str);
-    int len = 0;
-    while (str[len] != '\0')
+    char str2[1000];
+    strcpy(str2, str);
+    strrev(str);
+    if (strcmp(str,str2) == 0)
     {
-        len++;
-    }
-    len--;
-    int check = 1;
-    for (int i = 0; i < (len / 2 + len % 2); i++)
-    {
-        if (str[i] != str[len - i])
-        {
-            check = 0;
-        }
-    }
-    if (check)
-    {
-        printf("Given string is pelindrom.\n");
+        printf("Given string is palindrome.\n");
     }
     else
-        printf("Given string is not pelindrom.\n");
-
+        printf("Given string is not palindrome.\n");
     return 0;
 }
