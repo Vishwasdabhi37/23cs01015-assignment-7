@@ -2,7 +2,7 @@
 #include <string.h>
 void func(char arr[], int low, int high)
 {
-    if (low == high)
+    if (low >= high)
     {
         return;
     }
